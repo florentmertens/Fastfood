@@ -35,8 +35,7 @@ nav {
 #carousel {
   height: 50vh;
   width: 100%;
-  background: center / cover url("/images/carousel.png");
-  background-size: auto;
+  background: center / cover;
   display: flex;
   justify-content: space-between;
   text-align: center;
