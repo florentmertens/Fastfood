@@ -4,9 +4,13 @@ var carousel = document.getElementById("carousel");
 var carouselBtn = document.getElementsByClassName("carouselBtn");
 
 var carouselImages = [
-  "url(/images/carousel.png)",
-  "url(/images/chef.png)",
-  "url(/images/ronaldo.webp)",
+  "url(/images/meal/meal1.jpg)",
+  "url(/images/meal/meal2.jpg)",
+  "url(/images/meal/meal3.jpg)",
+  "url(/images/meal/meal4.jpg)",
+  "url(/images/meal/meal5.jpg)",
+  "url(/images/meal/meal6.jpg)",
+  "url(/images/meal/meal7.jpg)",
 ];
 var currentCarouselImage = (carousel.style.backgroundImage = carouselImages[1]);
 

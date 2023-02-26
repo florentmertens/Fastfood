@@ -14,6 +14,10 @@ body {
   align-items: center;
 }
 
+img {
+  width: 50%;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -39,6 +43,7 @@ nav {
   display: flex;
   justify-content: space-between;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .carouselBtn {
@@ -53,4 +58,103 @@ nav {
 .carouselBtn:hover {
   background-color: rgba(245, 245, 245, 0.6);
   color: black;
+}
+
+#categories,
+#superDelicious,
+#curatedCollections {
+  width: 70%;
+  margin-bottom: 50px;
+}
+
+#categories h1 {
+  margin-bottom: 20px;
+}
+
+.categoriesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categorie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.25s linear;
+}
+
+.categorie:hover {
+  transform: scale(1.1);
+}
+
+.categorie img {
+  height: 200px;
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.categorie p {
+  font-size: 1.25rem;
+}
+
+#superDelicious h1 {
+  margin-bottom: 20px;
+}
+
+.deliciousContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.deliciousCard {
+  width: 30%;
+  height: 100%;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.deliciousCard > *:not(.deliciousCard > img) {
+  margin: 10px;
+}
+
+.deliciousCard > img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.deliciousCard .recipeName {
+  font-size: 1.5rem;
+}
+
+.deliciousCard .chefProfil {
+  display: flex;
+  align-items: center;
+}
+
+.deliciousCard .chefProfil img {
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.deliciousCard .aboutRecipe {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.deliciousCard .aboutRecipe i {
+  margin-right: 5px;
 }
